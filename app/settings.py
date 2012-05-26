@@ -1,4 +1,4 @@
-#Django settings for app project.
+# Django settings for app project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -129,10 +129,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'payments',    
     'registration',    
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
 )
 
 ACCOUNT_ACTIVATION_DAYS = 7
