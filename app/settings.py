@@ -1,4 +1,4 @@
-# Django settings for app_2 project.
+#Django settings for app project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -73,7 +73,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    '/home/noah/django_apps/generic_app/app_2/static/common',
+    '/home/noah/django_apps/Django-Boilerplate/static/common',
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -107,13 +107,13 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'app_2.urls'
+ROOT_URLCONF = 'app.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'app_2.wsgi.application'
+WSGI_APPLICATION = 'app.wsgi.application'
 
 TEMPLATE_DIRS = (
-    '/home/noah/django_apps/generic_app/app_2/templates',
+    '/home/noah/django_apps/Django-Boilerplate/templates',
 
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
@@ -129,7 +129,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'payments',    
     'registration',    
-    'accounts',    
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:

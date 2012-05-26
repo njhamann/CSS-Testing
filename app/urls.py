@@ -1,7 +1,6 @@
 from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
-    url(r'^accounts/', include('accounts.urls')),
     url(r'^dashboard/', include('dashboard.urls')),
     url(r'^settings/payment/', include('payments.urls')),
     url(r'^settings/', include('users.urls')),
@@ -20,7 +19,7 @@ urlpatterns = patterns('',
     (r'^register/$', 'registration.views.register',
         {
             'backend': 'registration.backends.simple.SimpleBackend',
-            'success_url':'accounts.views.save_account'     
+            'success_url':'dashboard.views.index'     
         },
         'registration_register'
     ),
